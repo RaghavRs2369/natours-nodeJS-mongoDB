@@ -1,6 +1,7 @@
 const express = require('express');
 const tourController = require('./../controllers/tourController');
 const authController = require('./../controllers/authController');
+const reviewRouter = require('./../routes/reviewRoutes');
 
 const router = express.Router();
 
@@ -10,6 +11,10 @@ const router = express.Router();
 // Check if body contains the name and price property
 // If not, send back 400 (bad request)
 // Add it to the post handler stack
+
+// GET /tour/234fde4/reviews/98737da
+
+router.use('/:tourId/reviews', reviewRouter);
 
 router
   .route('/top-5-cheap')
