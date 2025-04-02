@@ -1,0 +1,11 @@
+{
+  "workbench.colorTheme": "Monokai Dimmed",
+  "editor.fontWeight": "normal",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "workbench.iconTheme": "vscode-icons",
+
+  "[pug]": {
+    "editor.defaultFormatter": "mrmlnc.vscode-pugbeautify"
+  }
+}
